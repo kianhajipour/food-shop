@@ -1,0 +1,84 @@
+.root {
+    -fx-font-family: "Segoe UI", Tahoma, sans-serif;
+    -fx-background-color: #FFFBEB;
+}
+
+.button {
+    -fx-background-color: #e77518;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-padding: 8 16 8 16;
+    -fx-background-radius: 8px;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #af4f0e;
+}
+
+.button:pressed {
+    -fx-background-color: #B91C1C;
+}
+
+.text-field {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #D1D5DB;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-padding: 6 10 6 10;
+    -fx-font-size: 14px;
+}
+
+.text-field:focused {
+    -fx-border-color: #EF4444;
+    -fx-border-width: 2px;
+}
+
+.label {
+    -fx-text-fill: #1F2937;
+    -fx-font-size: 14px;
+}
+
+.login-btn {
+    -fx-background-color: #0c7b13;
+}
+.login-btn:hover {
+    -fx-background-color: #1e6221;
+}
+
+.login-btn:checked {
+    -fx-background-color: #1e4462;
+}
+
+.clickable-icon {
+    -fx-opacity: 1.0; 
+    -fx-cursor: hand;  
+}
+
+.clickable-icon:hover {
+    -fx-opacity: 0.5; 
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 0); 
+}
+
+.clickable-icon:pressed {
+    -fx-opacity: 0.2; 
+}
+
+.category-label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #333333;
+    -fx-padding: 8px 12px;
+    -fx-background-color: #f5f5f5;
+    -fx-background-radius: 6px;
+    -fx-cursor: hand;
+}
+
+.category-label:hover {
+    -fx-background-color: #e0e0e0;
+    -fx-text-fill: #1a73e8;
+}
+
+.category-label:pressed {
+    -fx-background-color: #d0d0d0;
+}
