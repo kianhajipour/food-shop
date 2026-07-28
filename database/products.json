@@ -1,0 +1,91 @@
+[
+  {
+    "name": "کباب کوبیده",
+    "price": 480,
+    "category": "IRANI",
+    "imagePath": "/view/menu/images/irani/kabab.jpg"
+  },
+  {
+    "name": "جوجه با کوبیده",
+    "price": 250000.0,
+    "category": "IRANI",
+    "imagePath": "/view/menu/images/irani/kabakBajuj.jpg"
+  },
+  {
+    "name": "قرمه سبزی",
+    "price": 250000.0,
+    "category": "IRANI",
+    "imagePath": "/view/menu/images/irani/qurme.jpg"
+  }
+  ,{
+  "name": "عدس پلو با گوشت",
+  "price": 200000.0,
+  "category": "IRANI",
+  "imagePath": "/view/menu/images/irani/images (1).jpg"
+},
+  {
+    "name": "سوپ جو",
+    "price": 80000.0,
+    "category": "IRANI",
+    "imagePath": "/view/menu/images/irani/images (2).jpg"
+  },
+  {
+    "name": "آش رشته",
+    "price": 120000.0,
+    "category": "IRANI",
+    "imagePath": "/view/menu/images/irani/images (3).jpg"
+  },
+  {
+    "name": "کوفته تبریزی",
+    "price": 280000.0,
+    "category": "IRANI",
+    "imagePath": "/view/menu/images/irani/images (4).jpg"
+  },
+  {
+    "name": "چلو کباب برگ",
+    "price": 350000.0,
+    "category": "IRANI",
+    "imagePath": "/view/menu/images/irani/images (5).jpg"
+  },
+  {
+    "name": "ماکارونی با ته‌دیگ سیب‌زمینی",
+    "price": 180000.0,
+    "category": "IRANI",
+    "imagePath": "/view/menu/images/irani/images.jpg"
+  }
+  ,
+  {
+    "name": "بستنی موزی",
+    "price": 205,
+    "category": "DESSERT",
+    "imagePath": "/view/menu/images/Desserts/bastaniMozi.jpg"
+  }
+  ,
+  {
+    "name": "بستنی شکلاتی ویژه",
+    "price": 270,
+    "category": "DESSERT",
+    "imagePath": "/view/menu/images/Desserts/bastaniVip.jpg"
+  }
+  ,
+  {
+    "name": "کیک شکلاتی",
+    "price": 220,
+    "category": "DESSERT",
+    "imagePath": "/view/menu/images/Desserts/cake.jpeg"
+  }
+  ,
+  {
+    "name": "دسر خوشمزه",
+    "price": 290,
+    "category": "DESSERT",
+    "imagePath": "/view/menu/images/Desserts/deservip.jpg"
+  }
+  ,
+  {
+    "name": "فالوده شیرازی",
+    "price": 180,
+    "category": "DESSERT",
+    "imagePath": "/view/menu/images/Desserts/images.jpg"
+  }
+]

@@ -1,10 +1,12 @@
 package view.menu;
 
+import controller.Category;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import model.CategoryModel;
 
 import java.io.IOException;
 
@@ -18,7 +20,7 @@ public class Main extends Application {
         Main.primaryStage = primaryStage;
         primaryStage.setTitle("سیستم سفارش غذا - ورود");
 
-        Parent root = FXMLLoader.load(Main.class.getResource("/view/menu/login.fxml"));
+        Parent root = FXMLLoader.load(Main.class.getResource("/view/menu/mainMenu.fxml"));
         scene = new Scene(root);
         scene.getStylesheets().add(Main.class.getResource("/view/menu/style.css").toExternalForm());
 
@@ -26,30 +28,26 @@ public class Main extends Application {
         primaryStage.show();
     }
 
-    public static void showLoginScreen() {
-        try {
-            Parent root = FXMLLoader.load(Main.class.getResource("/view/menu/login.fxml"));
-            scene.setRoot(root);
-            primaryStage.setTitle("سیستم سفارش غذا - ورود");
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
 
-    public static void regesterScreen() {
-        try {
-            Parent root = FXMLLoader.load(Main.class.getResource("/view/menu/register.fxml"));
-            scene.setRoot(root);
-            primaryStage.setTitle("سیستم سفارش غذا - ثبت نام");
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
     public static void showMainScreen() {
         try {
             Parent root = FXMLLoader.load(Main.class.getResource("/view/menu/mainMenu.fxml"));
             scene.setRoot(root);
             primaryStage.setTitle("سیستم سفارش غذا - ورود");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    public static void showCateScreen(CategoryModel category) {
+        try {
+            FXMLLoader loader = new FXMLLoader(Main.class.getResource("/view/menu/category.fxml"));
+            Parent root = loader.load();
+
+            Category catController = loader.getController();
+            catController.initialize(category);
+
+            scene.setRoot(root);
+            primaryStage.setTitle("سیستم سفارش غذا - منو");
         } catch (IOException e) {
             e.printStackTrace();
         }

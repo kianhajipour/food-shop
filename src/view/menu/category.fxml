@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="599.0" prefWidth="702.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Category">
+   <children>
+      <BorderPane prefHeight="668.0" prefWidth="702.0" StackPane.alignment="TOP_RIGHT">
+         <center>
+            <VBox alignment="CENTER_RIGHT" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="cateLable" alignment="CENTER" contentDisplay="CENTER" prefHeight="39.0" prefWidth="598.0" text="Label">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+                  <MenuButton alignment="CENTER" contentDisplay="BOTTOM" mnemonicParsing="false" prefHeight="39.0" prefWidth="162.0" styleClass="product-card" text="مرتب بر اساس">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#maxprice" text="گران ترین" />
+                      <MenuItem mnemonicParsing="false" onAction="#minprice" text="ارزان ترین" />
+                        <MenuItem mnemonicParsing="false" onAction="#maxstar" text="بیشترین ستاره" />
+                    </items>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </MenuButton>
+                  <ScrollPane prefHeight="510.0" prefWidth="619.0">
+                     <content>
+                        <FlowPane fx:id="foodFlowPane" alignment="CENTER" columnHalignment="CENTER" hgap="10.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="392.0" prefWidth="913.0" styleClass="my-custom-box" vgap="15.0">
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </FlowPane>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </VBox>
+         </center>
+         <top>
+            <fx:include source="header.fxml" />
+         </top>
+         <right>
+            <fx:include source="categoryBar.fxml" />
+         </right>
+      </BorderPane>
+   </children>
+</StackPane>

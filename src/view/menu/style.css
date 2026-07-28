@@ -82,3 +82,75 @@
 .category-label:pressed {
     -fx-background-color: #d0d0d0;
 }
+
+.my-custom-box {
+    -fx-background-color: #62cf085b;
+    -fx-background-radius: 10px; 
+}
+
+.my-custom-box2 {
+    -fx-background-color: #f085138a;
+    -fx-background-radius: 10px; 
+}
+
+.my-custom-box3 {
+    -fx-background-color: #de751f;
+    -fx-background-radius: 10px; 
+}
+
+.product-card {
+    -fx-background-color: #ffffff;      
+    -fx-background-radius: 11px;      
+    -fx-border-color: #de751f;   
+    -fx-border-width: 2px;      
+    -fx-border-radius: 10px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.05), 8, 0, 0, 2); 
+    -fx-cursor: hand;                 
+}
+.product-card:hover {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.12), 12, 0, 0, 4);
+    -fx-translate-y: -2px; /* کارت یک‌میلی‌متر می‌آید بالا (افکت جذابی است) */
+}
+.product-card-green {
+    -fx-background-color: #ffffff;      
+    -fx-background-radius: 11px;      
+    -fx-border-color: #4CAF50;   
+    -fx-border-width: 2px;      
+    -fx-border-radius: 10px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.05), 8, 0, 0, 2); 
+    -fx-cursor: hand;                
+}
+.product-card-green:hover {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.12), 12, 0, 0, 4);
+    -fx-translate-y: -2px; /* کارت یک‌میلی‌متر می‌آید بالا (افکت جذابی است) */
+}
+
+/* استایل کلی برای خود اسکرول‌پین */
+.scroll-pane {
+    -fx-background-color: transparent;
+    -fx-background: transparent;
+}
+
+/* تغییر ظاهر نوار اسکرول افقی و عمودی */
+.scroll-pane .thumb {
+    -fx-background-color: #de751f; /* رنگ دستگیره اسکرول (هماهنگ با کادر کارت‌ها) */
+    -fx-background-radius: 5px;
+}
+
+.scroll-pane .track {
+    -fx-background-color: #f0f0f0; /* رنگ مسیر پشت نوار اسکرول */
+    -fx-background-radius: 5px;
+}
+
+/* حذف کادر یا حاشیه‌ی پیش‌فرض اسکرول‌پین */
+.scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+
+.food-image {
+    -fx-background-radius: 15px;
+    -fx-background-color: #ffffff;
+    -fx-background-insets: 0;
+}
+
+

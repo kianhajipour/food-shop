@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox fx:id="header" prefHeight="76.0" prefWidth="702.0" spacing="5.0" styleClass="my-custom-box3" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HeaderController">
+   <children>
+      <ImageView fitHeight="36.0" fitWidth="51.0" onMouseClicked="#sabad" pickOnBounds="true" preserveRatio="true" styleClass="clickable-icon">
+         <image>
+            <Image url="@shopping-cart.png" />
+         </image>
+         <HBox.margin>
+            <Insets top="10.0" />
+         </HBox.margin>
+      </ImageView>
+      <ImageView fitHeight="37.0" fitWidth="41.0" onMouseClicked="#backtomain" pickOnBounds="true" preserveRatio="true" styleClass="clickable-icon">
+         <image>
+            <Image url="@utensils.png" />
+         </image>
+         <HBox.margin>
+            <Insets top="10.0" />
+         </HBox.margin>
+      </ImageView>
+      <ImageView fitHeight="76.0" fitWidth="575.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</HBox>
