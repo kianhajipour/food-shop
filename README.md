@@ -1,12 +1,4 @@
-```markdown
 # 🍕 Food Order System | سیستم سفارش‌گیری خودکار رستوران
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Java-21-orange?style=for-the-badge&logo=openjdk" alt="Java Version">
-  <img src="https://img.shields.io/badge/JavaFX-GUI-blue?style=for-the-badge&logo=java" alt="JavaFX">
-  <img src="https://img.shields.io/badge/Architecture-MVC-green?style=for-the-badge" alt="MVC">
-  <img src="https://img.shields.io/badge/Status-Completed-success?style=for-the-badge" alt="Status">
-</p>
 
 [ **English** ] | [ **فارسی** ]
 
@@ -35,24 +27,15 @@ This app is optimized for touchscreen Windows devices, allowing customers to pla
 * **Styling:** FXML with custom CSS stylesheets
 
 ### 📁 Project Structure
-```text
 src/
 ├── controller/
 ├── model/
 ├── view/menu/
 └── Main.java
 
-```
-
 ### 🚀 How to Run
-
 1. Clone the repository:
-```bash
-git clone [https://github.com/your-username/food-shop-project.git](https://github.com/your-username/food-shop-project.git)
-
-```
-
-
+   git clone https://github.com/your-username/food-shop-project.git
 2. Open the project in **IntelliJ IDEA** or your preferred Java IDE.
 3. Ensure JavaFX 21 SDK is configured in your project structure.
 4. Run `view.menu.Main`.
@@ -68,51 +51,33 @@ git clone [https://github.com/your-username/food-shop-project.git](https://githu
 مشتریان می‌توانند بدون نیاز به گارسون، سفارش خود را از روی مانیتور لمسی ثبت کنند و تمام سفارشات به صورت خودکار و لحظه‌ای در پنل مدیریت/گارسون جمع‌آوری می‌شوند.
 
 ### ✨ ویژگی‌های اصلی
-
 * 🖥️ **منو و ویترین اصلی:** نمایش جذاب غذاها همراه با تصویر، عنوان و قیمت.
 * 📂 **دسته‌بندی موضوعی:** تفکیک غذاها بر اساس گروه‌بندی (پیتزا، نوشیدنی و...).
 * 🏷️ **مرتب‌سازی قیمت:** قابلیت مرتب‌سازی اقلام بر اساس قیمت (صعودی/نزولی).
 * 🛒 **سبد خرید موقت:** نگهداری اقلام انتخابی کاربر و محاسبه خودکار قیمت کل.
 * 🔐 **پنل اختصاصی ادمین:**
-* ورود سریع از طریق آیکون پروفایل در بالای صفحه (رمز عبور پیش‌فرض: `1234`).
-* نمایش کامل اقلام هر سفارش، شماره سفارش و مبلغ کل.
-* امکان مدیریت، اتمام سفارش (تحویل غذا) یا حذف آن.
-
-
+  * ورود سریع از طریق آیکون پروفایل در بالای صفحه (رمز عبور پیش‌فرض: `1234`).
+  * نمایش کامل اقلام هر سفارش، شماره سفارش و مبلغ کل.
+  * امکان مدیریت، اتمام سفارش (تحویل غذا) یا حذف آن.
 
 ### 🛠️ تکنولوژی‌های استفاده‌شده
-
 * **زبان برنامه‌نویسی:** Java 21
 * **رابط کاربری:** JavaFX (به همراه FXMLLoader و Scene Builder)
 * **معماری پروژه:** MVC (Model - View - Controller)
 * **استایل‌دهی:** FXML + CSS سفارشی
 
 ### 📁 ساختار پروژه
-
-```text
 src/
 ├── controller/
 ├── model/
 ├── view/menu/
 └── Main.java
 
-```
-
 ### 🚀 نحوه اجرا
-
 1. پروژه را کلون کنید:
-```bash
-git clone [https://github.com/your-username/food-shop-project.git](https://github.com/your-username/food-shop-project.git)
-
-```
-
-
+   git clone https://github.com/your-username/food-shop-project.git
 2. پروژه را در محیط **IntelliJ IDEA** باز کنید.
 3. از تنظیم بودن SDK جاوا و کتابخانه‌های JavaFX اطمینان حاصل کنید.
 4. فایل `view.menu.Main` را اجرا کنید.
 
 🔑 **رمز عبور ادمین:** `1234`
-
-```
-
-```
