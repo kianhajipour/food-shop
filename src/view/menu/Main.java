@@ -1,12 +1,14 @@
 package view.menu;
 
 import controller.Category;
+import controller.ProductPageController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import model.CategoryModel;
+import model.Product;
 
 import java.io.IOException;
 
@@ -14,12 +16,10 @@ public class Main extends Application {
 
     private static Stage primaryStage;
     private static Scene scene;
-
     @Override
     public void start(Stage primaryStage) throws Exception {
         Main.primaryStage = primaryStage;
         primaryStage.setTitle("سیستم سفارش غذا - ورود");
-
         Parent root = FXMLLoader.load(Main.class.getResource("/view/menu/mainMenu.fxml"));
         scene = new Scene(root);
         scene.getStylesheets().add(Main.class.getResource("/view/menu/style.css").toExternalForm());
@@ -52,6 +52,46 @@ public class Main extends Application {
             e.printStackTrace();
         }
     }
+    public static void showProductScreen(Product product) {
+        try {
+            FXMLLoader loader = new FXMLLoader(Main.class.getResource("/view/menu/productcard.fxml"));
+            Parent root = loader.load();
+            ProductPageController productPageController = loader.getController();
+            productPageController.loadPage(product);
+            scene.setRoot(root);
+            primaryStage.setTitle("سیستم سفارش غذا - ورود");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    public static void showOrderScreen() {
+        try {
+            Parent root = FXMLLoader.load(Main.class.getResource("/view/menu/orderPage.fxml"));
+            scene.setRoot(root);
+            primaryStage.setTitle("سیستم سفارش غذا - منو");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    public static void showLoginPage(){
+        try {
+            Parent root = FXMLLoader.load(Main.class.getResource("/view/menu/login.fxml"));
+            scene.setRoot(root);
+            primaryStage.setTitle("سیستم سفارش غذا - منو");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    public static void showAdminPage(){
+        try {
+            Parent root = FXMLLoader.load(Main.class.getResource("/view/menu/AdminController.fxml"));
+            scene.setRoot(root);
+            primaryStage.setTitle("سیستم سفارش غذا - پنل ادمین");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
 
     public static void main(String[] args) {
         launch(args);

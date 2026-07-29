@@ -37,6 +37,7 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
@@ -55,23 +56,28 @@
                </bottom>
             </BorderPane>
          </children></VBox>
-      <VBox alignment="CENTER" prefHeight="318.0" prefWidth="200.0" StackPane.alignment="CENTER">
+      <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="515.0" prefWidth="430.0" StackPane.alignment="CENTER">
          <children>
-            <Label alignment="CENTER" contentDisplay="TOP" prefHeight="34.0" prefWidth="270.0" text="شماره موبایل" />
-            <TextField fx:id="phoneTextField" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#loginBtn" prefHeight="34.0" prefWidth="200.0" />
-            <Button alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#loginBtn" prefHeight="34.0" prefWidth="125.0" styleClass="login-btn" text="ورود">
-               <VBox.margin>
-                  <Insets top="10.0" />
-               </VBox.margin>
-            </Button>
-            <Button alignment="TOP_CENTER" mnemonicParsing="false" onAction="#newUserBtn" prefHeight="34.0" prefWidth="94.0" text="ثبت نام" textFill="#cc4343">
+            <Label alignment="TOP_CENTER" contentDisplay="CENTER" prefHeight="35.0" prefWidth="200.0" styleClass="productBox2" text="پنل ورود ادمین">
                <font>
-                  <Font name="Calibri" size="12.0" />
+                  <Font size="22.0" />
                </font>
                <VBox.margin>
-                  <Insets top="10.0" />
+                  <Insets bottom="50.0" />
                </VBox.margin>
-            </Button>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="TOP" prefHeight="34.0" prefWidth="270.0" text="رمز عبور" />
+            <TextField fx:id="passField" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#loginBtn" prefHeight="34.0" prefWidth="200.0" />
+            <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="3.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#back" prefHeight="34.0" prefWidth="98.0" text="بازگشت" />
+                  <Button alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#loginBtn" prefHeight="34.0" prefWidth="125.0" styleClass="login-btn" text="ورود" />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </HBox>
+            <Label fx:id="message" alignment="CENTER" contentDisplay="CENTER" prefHeight="26.0" prefWidth="162.0" />
          </children>
          <StackPane.margin>
             <Insets bottom="30.0" left="200.0" right="200.0" />

@@ -63,11 +63,9 @@ public class MainController {
                 Node cardNode = loader.load();
 
                 Object controller = loader.getController();
-                if (controller instanceof FoodCardController) {
-                    ((FoodCardController) controller).setData(product.getName(), product.getPrice(), product.getImagePath());
-                } else if (controller instanceof FoodCardController2) {
-                    ((FoodCardController2) controller).setData(product.getName(), product.getPrice(), product.getImagePath());
-                }
+
+                ((FoodCardController) controller).setData(product);
+
 
                 box.getChildren().add(cardNode);
             } catch (IOException e) {

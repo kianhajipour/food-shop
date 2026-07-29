@@ -23,6 +23,9 @@
             <Insets top="10.0" />
          </HBox.margin>
       </ImageView>
-      <ImageView fitHeight="76.0" fitWidth="575.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="29.0" fitWidth="31.0" onMouseClicked="#gotoadmin" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@user.png" />
+         </image></ImageView>
    </children>
 </HBox>

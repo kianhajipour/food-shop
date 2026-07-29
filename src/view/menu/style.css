@@ -41,14 +41,14 @@
 }
 
 .login-btn {
-    -fx-background-color: #0c7b13;
+    -fx-background-color: #f02011f5;
 }
 .login-btn:hover {
     -fx-background-color: #1e6221;
 }
 
 .login-btn:checked {
-    -fx-background-color: #1e4462;
+    -fx-background-color: #a5280ca5;
 }
 
 .clickable-icon {
@@ -97,6 +97,23 @@
     -fx-background-color: #de751f;
     -fx-background-radius: 10px; 
 }
+.my-custom-box4 {
+    -fx-background-color: #0b9452;
+    -fx-background-radius: 10px; 
+}
+
+.productBox {      
+    -fx-background-radius: 11px;      
+    -fx-border-color: #070beb;   
+    -fx-border-width: 3px;      
+    -fx-border-radius: 10px;                
+}
+.productBox2 {      
+    -fx-background-radius: 11px;      
+    -fx-border-color: #eb6a07;   
+    -fx-border-width: 3px;      
+    -fx-border-radius: 10px;               
+}
 
 .product-card {
     -fx-background-color: #ffffff;      
@@ -125,13 +142,13 @@
     -fx-translate-y: -2px; /* کارت یک‌میلی‌متر می‌آید بالا (افکت جذابی است) */
 }
 
-/* استایل کلی برای خود اسکرول‌پین */
+
 .scroll-pane {
     -fx-background-color: transparent;
     -fx-background: transparent;
 }
 
-/* تغییر ظاهر نوار اسکرول افقی و عمودی */
+
 .scroll-pane .thumb {
     -fx-background-color: #de751f; /* رنگ دستگیره اسکرول (هماهنگ با کادر کارت‌ها) */
     -fx-background-radius: 5px;
@@ -142,7 +159,7 @@
     -fx-background-radius: 5px;
 }
 
-/* حذف کادر یا حاشیه‌ی پیش‌فرض اسکرول‌پین */
+
 .scroll-pane .viewport {
     -fx-background-color: transparent;
 }

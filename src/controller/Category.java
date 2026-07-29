@@ -43,7 +43,7 @@ public class Category {
                     Node cardNode = loader.load();
 
                     FoodCardController cardController = loader.getController();
-                    cardController.setData(product.getName(), product.getPrice(), product.getImagePath());
+                    cardController.setData(product);
 
                     foodFlowPane.getChildren().add(cardNode);
                 } catch (IOException e) {

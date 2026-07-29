@@ -7,6 +7,9 @@ public class HeaderController {
         Main.showMainScreen();
     }
     public void sabad(){
-
+        Main.showOrderScreen();
+    }
+    public void gotoadmin(){
+        Main.showLoginPage();
     }
 }

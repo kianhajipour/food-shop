@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="579.0" prefWidth="766.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.OrderController">
+   <children>
+      <BorderPane prefHeight="442.0" prefWidth="766.0" StackPane.alignment="CENTER">
+         <top>
+            <fx:include source="header.fxml" />
+         </top>
+         <right>
+            <fx:include source="categoryBar.fxml" />
+         </right>
+         <bottom>
+            <VBox alignment="CENTER" prefHeight="189.0" prefWidth="766.0" spacing="10.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="totalcost" alignment="CENTER" contentDisplay="CENTER" prefHeight="38.0" prefWidth="158.0" styleClass="productBox" text="مجموع قیمت" />
+                  <Button mnemonicParsing="false" onAction="#finish" prefHeight="52.0" prefWidth="215.0" text="تایید سفارش" />
+               </children>
+            </VBox>
+         </bottom>
+         <center>
+            <ScrollPane prefHeight="354.0" prefWidth="683.0" BorderPane.alignment="CENTER">
+               <content>
+                  <FlowPane fx:id="orderedflowpane" alignment="CENTER" hgap="5.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="238.0" prefWidth="679.0" styleClass="my-custom-box" vgap="5.0">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </FlowPane>
+               </content>
+               <BorderPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </BorderPane.margin>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </ScrollPane>
+         </center>
+      </BorderPane>
+   </children>
+</StackPane>

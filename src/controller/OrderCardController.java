@@ -4,20 +4,17 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import model.Order;
 import model.Product;
 import view.menu.Main;
 
-public class FoodCardController {
-
-    @FXML
-    private ImageView image;
-
+public class OrderCardController {
     @FXML
     private Label name;
-
     @FXML
     private Label price;
-
+    @FXML
+    private ImageView image;
     private Product product;
 
     public void setData(Product product) {
@@ -33,7 +30,8 @@ public class FoodCardController {
         }
     }
 
-    public void pressed() {
-        Main.showProductScreen(product);
+    public void delete(){
+        Order.removeProduct(product);
+        Main.showOrderScreen();
     }
 }
