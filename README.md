@@ -1,14 +1,29 @@
 # 🍕 Food Order System | سیستم سفارش‌گیری خودکار رستوران
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Java-21-orange?style=for-the-badge&logo=openjdk" alt="Java 21">
+  <img src="https://img.shields.io/badge/JavaFX-GUI-blue?style=for-the-badge&logo=java" alt="JavaFX">
+  <img src="https://img.shields.io/badge/Architecture-MVC-green?style=for-the-badge" alt="MVC Architecture">
+  <img src="https://img.shields.io/badge/Design-FXML_%26_CSS-purple?style=for-the-badge" alt="FXML & CSS">
+</p>
+
+---
+
 [ **English** ] | [ **فارسی** ]
 
 ---
 
 ## 🇬🇧 English Version
 
-An automated, fast, and light-weight JavaFX application designed for self-service food ordering kiosks in restaurants and fast-food venues. Built as a 2–3 day hands-on learning project to explore **JavaFX UI development** and the **MVC Architecture**.
+An automated, fast, and light-weight **JavaFX** application designed for self-service food ordering kiosks in restaurants and fast-food venues. Built as a 2–3 day hands-on learning project to explore JavaFX UI development and the **Model-View-Controller (MVC)** Architecture.
 
 This app is optimized for touchscreen Windows devices, allowing customers to place orders independently while instantly pushing incoming orders to the admin/waiter display.
+
+### 📐 Architecture Overview (MVC Pattern)
+This project strictly follows the **Model-View-Controller (MVC)** architectural pattern to separate concerns:
+* **Model:** Handles data management (`Order`, `Product`, `CategoryModel`).
+* **View:** Manages presentation layout using FXML templates and CSS stylesheets.
+* **Controller:** Connects UI components with business logic and user interactions.
 
 ### ✨ Key Features
 * 🖥️ **Main Menu Showcase:** Displays products with custom images, names, and prices.
@@ -21,17 +36,19 @@ This app is optimized for touchscreen Windows devices, allowing customers to pla
   * Allows admins/waiters to complete (dismiss) or delete active orders.
 
 ### 🛠️ Tech Stack & Requirements
-* **Language:** Java 21
-* **UI Framework:** JavaFX (FXMLLoader & Scene Builder)
-* **Architecture:** Model-View-Controller (MVC)
-* **Styling:** FXML with custom CSS stylesheets
+| Component | Technology |
+| :--- | :--- |
+| **Language** | Java 21 |
+| **GUI Framework** | JavaFX (FXMLLoader & Scene Builder) |
+| **Design Pattern** | Model-View-Controller (MVC) |
+| **Styling** | FXML + Custom CSS |
 
 ### 📁 Project Structure
 src/
-├── controller/
-├── model/
-├── view/menu/
-└── Main.java
+├── controller/       # MVC Controllers (Logic & Event Handlers)
+├── model/            # MVC Models (Data Entities)
+├── view/menu/        # MVC Views (FXML layouts & CSS styles)
+└── Main.java         # Application Entry Point
 
 ### 🚀 How to Run
 1. Clone the repository:
@@ -46,9 +63,15 @@ src/
 
 ## 🇮🇷 نسخه فارسی
 
-یک پروژه ساده، سریع و کاربردی که برای مانیتورهای لمسی کیوسک‌های سفارش‌گیری در رستوران‌ها و فست‌فودها طراحی شده است. این اپلیکیشن طی یک تمرین ۲ الی ۳ روزه جهت تسلط بر **JavaFX** و معماری **MVC** پیاده‌سازی شده است.
+یک پروژه ساده، سریع و کاربردی که برای مانیتورهای لمسی کیوسک‌های سفارش‌گیری در رستوران‌ها و فست‌فودها طراحی شده است. این اپلیکیشن طی یک تمرین ۲ الی ۳ روزه جهت تسلط بر **JavaFX** و پیاده‌سازی معماری **MVC (Model-View-Controller)** توسعه یافته است.
 
 مشتریان می‌توانند بدون نیاز به گارسون، سفارش خود را از روی مانیتور لمسی ثبت کنند و تمام سفارشات به صورت خودکار و لحظه‌ای در پنل مدیریت/گارسون جمع‌آوری می‌شوند.
+
+### 📐 معماری پروژه (الگوی MVC)
+این نرم‌افزار بر اساس الگوی **MVC** جداسازی منطق و لایه‌ها را انجام داده است:
+* **مدل (Model):** مدیریت داده‌ها و کلاس‌های اصلی برنامه (`Order`, `Product`, `CategoryModel`).
+* **ویو (View):** طراحی رابط کاربری و صفحات لمسی با FXML و استایل‌دهی CSS.
+* **کنترلر (Controller):** ارتباط‌دهنده رویدادهای کاربر به داده‌ها و منطق برنامه.
 
 ### ✨ ویژگی‌های اصلی
 * 🖥️ **منو و ویترین اصلی:** نمایش جذاب غذاها همراه با تصویر، عنوان و قیمت.
@@ -61,17 +84,19 @@ src/
   * امکان مدیریت، اتمام سفارش (تحویل غذا) یا حذف آن.
 
 ### 🛠️ تکنولوژی‌های استفاده‌شده
-* **زبان برنامه‌نویسی:** Java 21
-* **رابط کاربری:** JavaFX (به همراه FXMLLoader و Scene Builder)
-* **معماری پروژه:** MVC (Model - View - Controller)
-* **استایل‌دهی:** FXML + CSS سفارشی
+| بخش | تکنولوژی / الگوی استفاده‌شده |
+| :--- | :--- |
+| **زبان برنامه‌نویسی** | Java 21 |
+| **رابط کاربری** | JavaFX (به همراه FXMLLoader و Scene Builder) |
+| **معماری نرم‌افزار** | Model-View-Controller (MVC) |
+| **استایل و دیزاین** | FXML + CSS سفارشی |
 
 ### 📁 ساختار پروژه
 src/
-├── controller/
-├── model/
-├── view/menu/
-└── Main.java
+├── controller/       # لایه کنترلرها (ارتباط منطق و فرم‌ها)
+├── model/            # لایه مدل‌ها (ساختار داده‌ها و سفارشات)
+├── view/menu/        # لایه ویو (فایل‌های FXML و استایل‌های CSS)
+└── Main.java         # نقطه شروع و اجرای اصلی برنامه
 
 ### 🚀 نحوه اجرا
 1. پروژه را کلون کنید:
